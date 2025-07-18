@@ -1,6 +1,6 @@
 {
   "name": "gamification-library2",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "React component library for gamification",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

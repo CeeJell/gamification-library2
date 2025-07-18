@@ -4159,7 +4159,7 @@ if (process.env.NODE_ENV === 'production') {
 var jsxRuntimeExports = jsxRuntime.exports;
 
 const Page = ({ title, children }) => {
-    return (jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [jsxRuntimeExports.jsxs("h1", { children: [title, " - hello there buy blueberries"] }), children] }));
+    return (jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [jsxRuntimeExports.jsxs("h1", { style: { color: "red" }, children: [title, " - hello there buy blueberries"] }), children] }));
 };
 
 exports.Page = Page;
