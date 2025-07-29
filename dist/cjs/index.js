@@ -4162,5 +4162,15 @@ const Page = ({ title, children }) => {
     return (jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [jsxRuntimeExports.jsxs("h1", { style: { color: "red" }, children: [title, " - hello there buy blueberries"] }), children] }));
 };
 
+const ProgressBar = ({ percentage }) => {
+    return (jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: jsxRuntimeExports.jsx("progress", { style: { accentColor: "red" }, value: percentage, max: "100" }) }));
+};
+
+const Achievement = ({ title, description, picture, percentage }) => {
+    return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "red", borderRadius: "8px" }, children: [jsxRuntimeExports.jsx("img", { src: picture, style: { float: "left", margin: "3px", border: "1px solid", borderColor: "black", padding: "1px" } }), jsxRuntimeExports.jsxs("div", { style: { float: "right", padding: "5px" }, children: [jsxRuntimeExports.jsx("h1", { children: title }), jsxRuntimeExports.jsx("h2", { children: description }), jsxRuntimeExports.jsx(ProgressBar, { percentage: percentage })] })] }));
+};
+
+exports.Achievement = Achievement;
 exports.Page = Page;
+exports.ProgressBar = ProgressBar;
 //# sourceMappingURL=index.js.map
