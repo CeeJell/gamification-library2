@@ -8,22 +8,28 @@ export default {
     },
     tags: ["autodocs"],
     argTypes: {
+        id: {
+            description: "Achievement ID",
+        },
+        profileId: {
+            description: "Profile ID",
+        },
         title: {
-            description: "Added Achievement!",
+            description: "Achievement title",
             control: {
                 type: "text",
             },
         },
         description: {
-            description: "Achievements have been added",
+            description: "Achievement description",
             control: {
                 type: "text",
             },
         },
         picture: {
+            description: "Picture for achievment",
             control: {
-                src: "https://www.w3schools.com/images/w3schools_green.jpg",
-                alt: "Achievement picture",
+                type: "text",
             },
         },
     },
@@ -33,6 +39,9 @@ export const PageOne = {
     args: {
         title: "Is this working????",
         description: "Yes it is",
-        picture: "https://avatars.fastly.steamstatic.com/72629d43a8e63c0459c2d9cc06731f64161e3e17_full.jpg"
+        picture: "https://avatars.fastly.steamstatic.com/72629d43a8e63c0459c2d9cc06731f64161e3e17_full.jpg",
+        percentage: "50",
+        id: "1",
+        profileId: "1",
     },
 };
