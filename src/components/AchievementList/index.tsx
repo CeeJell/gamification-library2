@@ -10,7 +10,7 @@ const AchievementList: React.FC<Props> = ({ children }) => {
             <div style={{margin: "auto"}}>
             <h1 style={{textDecorationLine: "underline", textAlign: "center"}}>Achievements</h1>
             </div>
-            <div>
+            <div style={{display: "flex", flexDirection: "row"}}>
             {children}
             </div>
         </div>

@@ -2261,7 +2261,7 @@ const Profile = ({ username, profilePicture, children }) => {
 };
 
 const AchievementList = ({ children }) => {
-    return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "#FF0099", borderRadius: "8px", width: "1000px", height: "400px" }, children: [jsxRuntimeExports.jsx("div", { style: { margin: "auto" }, children: jsxRuntimeExports.jsx("h1", { style: { textDecorationLine: "underline", textAlign: "center" }, children: "Achievements" }) }), jsxRuntimeExports.jsx("div", { children: children })] }));
+    return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "#FF0099", borderRadius: "8px", width: "1000px", height: "400px" }, children: [jsxRuntimeExports.jsx("div", { style: { margin: "auto" }, children: jsxRuntimeExports.jsx("h1", { style: { textDecorationLine: "underline", textAlign: "center" }, children: "Achievements" }) }), jsxRuntimeExports.jsx("div", { style: { display: "flex", flexDirection: "row" }, children: children })] }));
 };
 
 exports.Achievement = Achievement;
