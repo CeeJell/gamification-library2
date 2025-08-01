@@ -43,5 +43,6 @@ export const PageOne = {
         percentage: "50",
         id: "1",
         profileId: "1",
+        children: ""
     },
 };

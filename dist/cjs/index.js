@@ -2252,11 +2252,16 @@ const ProgressBar = ({ percentage }) => {
     return (jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: jsxRuntimeExports.jsx("progress", { style: { accentColor: "red" }, value: percentage, max: "100" }) }));
 };
 
-const Achievement = ({ title, description, picture, percentage }, { children }) => {
-    return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "red", borderRadius: "8px" }, children: [jsxRuntimeExports.jsx("img", { src: picture, style: { float: "left", margin: "3px", border: "1px solid", borderColor: "black", padding: "1px" } }), jsxRuntimeExports.jsxs("div", { style: { float: "right", padding: "5px" }, children: [jsxRuntimeExports.jsx("h1", { children: title }), jsxRuntimeExports.jsx("h2", { children: description }), jsxRuntimeExports.jsx(ProgressBar, { percentage: percentage })] }), children] }));
+const Achievement = ({ title, description, picture, percentage, children }) => {
+    return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "red", borderRadius: "8px", width: "465px", height: "180px" }, children: [jsxRuntimeExports.jsx("img", { src: picture, style: { float: "left", margin: "3px", border: "1px solid", borderColor: "black", padding: "1px", width: "170px", height: "170px" } }), jsxRuntimeExports.jsxs("div", { style: { margin: "auto", padding: "5px" }, children: [jsxRuntimeExports.jsx("h1", { children: title }), jsxRuntimeExports.jsx("h2", { children: description }), jsxRuntimeExports.jsx(ProgressBar, { percentage: percentage })] }), jsxRuntimeExports.jsx("div", { children: children })] }));
+};
+
+const Profile = ({ username, profilePicture, children }) => {
+    return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "red", borderRadius: "8px", }, children: [jsxRuntimeExports.jsx("img", { src: profilePicture, style: { float: "left", margin: "3px", border: "1px solid", borderColor: "black", padding: "1px", width: "100px", height: "100px" } }), jsxRuntimeExports.jsx("div", { style: { float: "right", padding: "5px" }, children: jsxRuntimeExports.jsx("h1", { style: { margin: "auto", textDecorationLine: "underline", padding: "10px" }, children: username }) }), jsxRuntimeExports.jsx("div", { children: children })] }));
 };
 
 exports.Achievement = Achievement;
 exports.Page = Page;
+exports.Profile = Profile;
 exports.ProgressBar = ProgressBar;
 //# sourceMappingURL=index.js.map

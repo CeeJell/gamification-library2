@@ -5,4 +5,5 @@ export type Props = {
     description: string;
     picture: string;
     percentage: number;
+    children: React.ReactNode;
 }

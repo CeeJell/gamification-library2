@@ -1,5 +1,5 @@
-export type ProfileProps = {
+export type Props = {
     username: string;
-    achievementlist: string;
-    friendlist: string;
+    profilePicture: string;
+    children: React.ReactNode;
 };

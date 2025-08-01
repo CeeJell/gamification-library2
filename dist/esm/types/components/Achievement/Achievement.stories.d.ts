@@ -41,5 +41,6 @@ export declare const PageOne: {
         percentage: string;
         id: string;
         profileId: string;
+        children: string;
     };
 };

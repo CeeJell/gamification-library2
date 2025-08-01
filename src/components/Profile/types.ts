@@ -1,5 +1,5 @@
-export type ProfileProps = {
+export type Props = {
     username: string;
-    achievementlist: string; // change to achievements part, done as seperate component
-    friendlist: string; // change to friendlist part, done as seperate component
+    profilePicture: string;
+    children: React.ReactNode;
 }

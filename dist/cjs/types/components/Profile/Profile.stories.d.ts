@@ -6,25 +6,13 @@ declare const _default: {
     };
     tags: string[];
     argTypes: {
-        id: {
-            description: string;
-        };
-        profileId: {
-            description: string;
-        };
-        title: {
+        username: {
             description: string;
             control: {
                 type: string;
             };
         };
-        description: {
-            description: string;
-            control: {
-                type: string;
-            };
-        };
-        picture: {
+        profilePicture: {
             description: string;
             control: {
                 type: string;
@@ -35,12 +23,8 @@ declare const _default: {
 export default _default;
 export declare const PageOne: {
     args: {
-        title: string;
-        description: string;
-        picture: string;
-        percentage: string;
-        id: string;
-        profileId: string;
+        username: string;
+        profilePicture: string;
         children: string;
     };
 };
