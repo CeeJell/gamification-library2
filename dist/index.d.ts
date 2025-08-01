@@ -7,7 +7,7 @@ type PageProps = {
 
 declare const Page: React$1.FC<PageProps>;
 
-type Props$2 = {
+type Props$3 = {
     id: number;
     profileId: number;
     title: string;
@@ -17,20 +17,26 @@ type Props$2 = {
     children: React.ReactNode;
 };
 
-declare const Achievement: React$1.FC<Props$2>;
+declare const Achievement: React$1.FC<Props$3>;
 
-type Props$1 = {
+type Props$2 = {
     percentage: number;
 };
 
-declare const ProgressBar: React$1.FC<Props$1>;
+declare const ProgressBar: React$1.FC<Props$2>;
 
-type Props = {
+type Props$1 = {
     username: string;
     profilePicture: string;
     children: React.ReactNode;
 };
 
-declare const Profile: React$1.FC<Props>;
+declare const Profile: React$1.FC<Props$1>;
 
-export { Achievement, Page, Profile, ProgressBar };
+type Props = {
+    children: React.ReactNode;
+};
+
+declare const AchievementList: React$1.FC<Props>;
+
+export { Achievement, AchievementList, Page, Profile, ProgressBar };

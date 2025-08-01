@@ -2258,5 +2258,9 @@ const Profile = ({ username, profilePicture, children }) => {
     return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "red", borderRadius: "8px", }, children: [jsxRuntimeExports.jsx("img", { src: profilePicture, style: { float: "left", margin: "3px", border: "1px solid", borderColor: "black", padding: "1px", width: "100px", height: "100px" } }), jsxRuntimeExports.jsx("div", { style: { float: "right", padding: "5px" }, children: jsxRuntimeExports.jsx("h1", { style: { margin: "auto", textDecorationLine: "underline", padding: "10px" }, children: username }) }), jsxRuntimeExports.jsx("div", { children: children })] }));
 };
 
-export { Achievement, Page, Profile, ProgressBar };
+const AchievementList = ({ children }) => {
+    return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "#FF0099", borderRadius: "8px", width: "1000px", height: "400px" }, children: [jsxRuntimeExports.jsx("div", { style: { margin: "auto" }, children: jsxRuntimeExports.jsx("h1", { style: { textDecorationLine: "underline", textAlign: "center" }, children: "Achievements" }) }), jsxRuntimeExports.jsx("div", { children: children })] }));
+};
+
+export { Achievement, AchievementList, Page, Profile, ProgressBar };
 //# sourceMappingURL=index.js.map
