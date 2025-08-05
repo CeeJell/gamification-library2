@@ -4,7 +4,7 @@ import ProgressBar from '../ProgressBar';
 
 const Achievement: React.FC<Props> = ({ title, description, picture, percentage, children }) => {
     return (
-        <div style={{border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "red", borderRadius: "8px", width: "465px", height: "180px", padding: "5px"}}>
+        <div style={{border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "red", borderRadius: "8px", width: "465px", height: "180px", padding: "5px", margin: "5px"}}>
             <img src={picture} style={{float: "left", margin: "3px 10px 3px 3px", border: "1px solid", borderColor: "black", padding: "1px", width: "170px", height: "170px"}}/>
 
             <div style={{margin: "auto", padding: "5px"}}>

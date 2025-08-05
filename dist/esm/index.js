@@ -2247,11 +2247,11 @@ const ProgressBar = ({ percentage }) => {
 };
 
 const Achievement = ({ title, description, picture, percentage, children }) => {
-    return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "red", borderRadius: "8px", width: "465px", height: "180px", padding: "5px" }, children: [jsxRuntimeExports.jsx("img", { src: picture, style: { float: "left", margin: "3px 10px 3px 3px", border: "1px solid", borderColor: "black", padding: "1px", width: "170px", height: "170px" } }), jsxRuntimeExports.jsxs("div", { style: { margin: "auto", padding: "5px" }, children: [jsxRuntimeExports.jsx("h1", { children: title }), jsxRuntimeExports.jsx("h2", { children: description }), jsxRuntimeExports.jsx(ProgressBar, { percentage: percentage })] }), jsxRuntimeExports.jsx("div", { children: children })] }));
+    return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "red", borderRadius: "8px", width: "465px", height: "180px", padding: "5px", margin: "5px" }, children: [jsxRuntimeExports.jsx("img", { src: picture, style: { float: "left", margin: "3px 10px 3px 3px", border: "1px solid", borderColor: "black", padding: "1px", width: "170px", height: "170px" } }), jsxRuntimeExports.jsxs("div", { style: { margin: "auto", padding: "5px" }, children: [jsxRuntimeExports.jsx("h1", { children: title }), jsxRuntimeExports.jsx("h2", { children: description }), jsxRuntimeExports.jsx(ProgressBar, { percentage: percentage })] }), jsxRuntimeExports.jsx("div", { children: children })] }));
 };
 
 const Profile = ({ username, profilePicture, children }) => {
-    return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "red", borderRadius: "8px", width: "350px", height: "110px" }, children: [jsxRuntimeExports.jsx("img", { src: profilePicture, style: { float: "left", margin: "3px", border: "1px solid", borderColor: "black", padding: "1px", width: "100px", height: "100px" } }), jsxRuntimeExports.jsx("div", { style: { padding: "5px", display: "flex", alignItems: "center", justifyContent: "center", }, children: jsxRuntimeExports.jsx("h1", { style: { margin: "auto", textDecorationLine: "underline", padding: "10px", fontSize: "28px" }, children: username }) }), jsxRuntimeExports.jsx("div", { children: children })] }));
+    return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "red", borderRadius: "8px", width: "350px", height: "110px", margin: "5px" }, children: [jsxRuntimeExports.jsx("img", { src: profilePicture, style: { float: "left", margin: "3px", border: "1px solid", borderColor: "black", padding: "1px", width: "100px", height: "100px" } }), jsxRuntimeExports.jsx("div", { style: { padding: "5px", display: "flex", alignItems: "center", justifyContent: "center", }, children: jsxRuntimeExports.jsx("h1", { style: { margin: "auto", textDecorationLine: "underline", padding: "10px", fontSize: "28px" }, children: username }) }), jsxRuntimeExports.jsx("div", { children: children })] }));
 };
 
 const AchievementList = ({ children }) => {
@@ -2259,9 +2259,9 @@ const AchievementList = ({ children }) => {
             width: "1050px", height: "250px" }, children: [jsxRuntimeExports.jsx("div", { style: { margin: "auto" }, children: jsxRuntimeExports.jsx("h1", { style: { textDecorationLine: "underline", textAlign: "center" }, children: "Achievements" }) }), jsxRuntimeExports.jsx("div", { style: { display: "flex", flexFlow: "row wrap", alignItems: "center", justifyContent: "center", margin: "3px" }, children: children })] }));
 };
 
-const ProfilePage = ({ children }) => {
+const ProfilePage = ({ children, username }) => {
     return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "#FF0099", borderRadius: "8px",
-            width: "1500px", height: "250px" }, children: [jsxRuntimeExports.jsx("div", { style: { margin: "auto" }, children: jsxRuntimeExports.jsx("h1", { style: { textDecorationLine: "underline", textAlign: "center" }, children: "Profile Page" }) }), jsxRuntimeExports.jsx("div", { style: { display: "flex", flexFlow: "row wrap", alignItems: "center", justifyContent: "center", margin: "3px" }, children: children })] }));
+            width: "1500px", height: "250px" }, children: [jsxRuntimeExports.jsx("div", { style: { margin: "auto" }, children: jsxRuntimeExports.jsx("h1", { style: { textDecorationLine: "underline", textAlign: "center" }, children: username }) }), jsxRuntimeExports.jsx("div", { style: { display: "flex", flexFlow: "row wrap", alignItems: "center", justifyContent: "center", margin: "3px" }, children: children })] }));
 };
 
 const FriendList = ({ children }) => {

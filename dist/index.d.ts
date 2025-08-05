@@ -34,6 +34,7 @@ declare const AchievementList: React$1.FC<Props$2>;
 
 type Props$1 = {
     children: React.ReactNode;
+    username: string;
 };
 
 declare const ProfilePage: React$1.FC<Props$1>;

@@ -11,11 +11,15 @@ export default {
         children: {
             description: "Place for Achievements to be added",
         },
+        username: {
+            description: "Username, placed on top of page"
+        },
     },
 };
 
 export const PageOne = {
     args: {
         children: "",
+        username: "Exjobb username",
     },
 };

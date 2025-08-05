@@ -9,11 +9,15 @@ declare const _default: {
         children: {
             description: string;
         };
+        username: {
+            description: string;
+        };
     };
 };
 export default _default;
 export declare const PageOne: {
     args: {
         children: string;
+        username: string;
     };
 };
