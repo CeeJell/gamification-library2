@@ -8,6 +8,7 @@ type Props$5 = {
     picture: string;
     percentage: number;
     children: React.ReactNode;
+    style: React.CSSProperties;
 };
 
 declare const Achievement: React$1.FC<Props$5>;
