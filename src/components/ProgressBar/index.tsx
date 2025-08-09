@@ -1,10 +1,10 @@
 import React from 'react';
 import { Props } from './types';
 
-const ProgressBar: React.FC<Props> = ({ percentage }) => {
+const ProgressBar: React.FC<Props> = ({ percentage, style = {} }) => {
     return (
         <>
-            <progress style={{accentColor: "red"}} value={percentage} max="100"></progress>
+            <progress style={{accentColor: "red", ...style}} value={percentage} max="100"></progress>
         </>
     );
 };
