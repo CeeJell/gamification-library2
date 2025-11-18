@@ -1,5 +1,6 @@
 export type Props = {
     children: React.ReactNode;
     username: string;
-    style?: React.CSSProperties;
+    borderStyle?: React.CSSProperties;
+    usernameStyle?: React.CSSProperties;
 };

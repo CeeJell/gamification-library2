@@ -6,5 +6,9 @@ export type Props = {
     picture: string;
     percentage: number;
     children: React.ReactNode;
-    style?: React.CSSProperties;
+    borderStyle?: React.CSSProperties;
+    pictureStyle?: React.CSSProperties;
+    titleStyle?: React.CSSProperties;
+    descriptionStyle?: React.CSSProperties;
+    progressbarStyle?: React.CSSProperties;
 };

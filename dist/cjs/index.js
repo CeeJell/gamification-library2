@@ -2244,33 +2244,33 @@ if (process.env.NODE_ENV === 'production') {
 
 var jsxRuntimeExports = jsxRuntime.exports;
 
-const ProgressBar = ({ percentage, style = {} }) => {
+const ProgressBar = ({ percentage, style }) => {
     return (jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: jsxRuntimeExports.jsx("progress", { style: { accentColor: "red", ...style }, value: percentage, max: "100" }) }));
 };
 
-const Achievement = ({ title, description, picture, percentage, children, style }) => {
+const Achievement = ({ title, description, picture, percentage, children, borderStyle, pictureStyle, titleStyle, descriptionStyle, progressbarStyle }) => {
     return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "red", borderRadius: "8px",
-            width: "465px", height: "180px", padding: "5px", margin: "5px", ...style,
-        }, children: [jsxRuntimeExports.jsx("img", { src: picture, style: { float: "left", margin: "3px 10px 3px 3px", border: "1px solid", borderColor: "black", padding: "1px", width: "170px", height: "170px" } }), jsxRuntimeExports.jsxs("div", { style: { margin: "auto", padding: "5px" }, children: [jsxRuntimeExports.jsx("h1", { children: title }), jsxRuntimeExports.jsx("h2", { children: description }), jsxRuntimeExports.jsx(ProgressBar, { percentage: percentage })] }), jsxRuntimeExports.jsx("div", { children: children })] }));
+            width: "465px", height: "180px", padding: "5px", margin: "5px", ...borderStyle,
+        }, children: [jsxRuntimeExports.jsx("img", { src: picture, style: { float: "left", margin: "3px 10px 3px 3px", border: "1px solid", borderColor: "black", padding: "1px", width: "170px", height: "170px", ...pictureStyle } }), jsxRuntimeExports.jsxs("div", { style: { margin: "auto", padding: "5px" }, children: [jsxRuntimeExports.jsx("h1", { style: { ...titleStyle }, children: title }), jsxRuntimeExports.jsx("h2", { style: { ...descriptionStyle }, children: description }), jsxRuntimeExports.jsx(ProgressBar, { percentage: percentage, style: { ...progressbarStyle } })] }), jsxRuntimeExports.jsx("div", { children: children })] }));
 };
 
-const Profile = ({ username, profilePicture, children, style }) => {
-    return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "red", borderRadius: "8px", width: "350px", height: "110px", margin: "5px", ...style }, children: [jsxRuntimeExports.jsx("img", { src: profilePicture, style: { float: "left", margin: "3px", border: "1px solid", borderColor: "black", padding: "1px", width: "100px", height: "100px" } }), jsxRuntimeExports.jsx("div", { style: { padding: "5px", display: "flex", alignItems: "center", justifyContent: "center", }, children: jsxRuntimeExports.jsx("h1", { style: { margin: "auto", textDecorationLine: "underline", padding: "10px", fontSize: "28px" }, children: username }) }), jsxRuntimeExports.jsx("div", { children: children })] }));
+const Profile = ({ username, profilePicture, children, borderStyle, pictureStyle, usernameStyle }) => {
+    return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "red", borderRadius: "8px", width: "350px", height: "110px", margin: "5px", ...borderStyle }, children: [jsxRuntimeExports.jsx("img", { src: profilePicture, style: { float: "left", margin: "3px", border: "1px solid", borderColor: "black", padding: "1px", width: "100px", height: "100px", ...pictureStyle } }), jsxRuntimeExports.jsx("div", { style: { padding: "5px", display: "flex", alignItems: "center", justifyContent: "center", }, children: jsxRuntimeExports.jsx("h1", { style: { margin: "auto", textDecorationLine: "underline", padding: "10px", fontSize: "28px", ...usernameStyle }, children: username }) }), jsxRuntimeExports.jsx("div", { children: children })] }));
 };
 
-const AchievementList = ({ children, style }) => {
+const AchievementList = ({ children, borderStyle, titleStyle }) => {
     return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "#FF0099", borderRadius: "8px",
-            width: "1050px", height: "250px", ...style }, children: [jsxRuntimeExports.jsx("div", { style: { margin: "auto" }, children: jsxRuntimeExports.jsx("h1", { style: { textDecorationLine: "underline", textAlign: "center" }, children: "Achievements" }) }), jsxRuntimeExports.jsx("div", { style: { display: "flex", flexFlow: "row wrap", alignItems: "center", justifyContent: "center", margin: "3px" }, children: children })] }));
+            width: "1050px", height: "250px", ...borderStyle }, children: [jsxRuntimeExports.jsx("div", { style: { margin: "auto" }, children: jsxRuntimeExports.jsx("h1", { style: { textDecorationLine: "underline", textAlign: "center", ...titleStyle }, children: "Achievements" }) }), jsxRuntimeExports.jsx("div", { style: { display: "flex", flexFlow: "row wrap", alignItems: "center", justifyContent: "center", margin: "3px" }, children: children })] }));
 };
 
-const ProfilePage = ({ children, username, style }) => {
+const ProfilePage = ({ children, username, borderStyle, usernameStyle }) => {
     return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "#FF0099", borderRadius: "8px",
-            width: "1500px", height: "250px", ...style }, children: [jsxRuntimeExports.jsx("div", { style: { margin: "auto" }, children: jsxRuntimeExports.jsx("h1", { style: { textDecorationLine: "underline", textAlign: "center" }, children: username }) }), jsxRuntimeExports.jsx("div", { style: { display: "flex", flexFlow: "row wrap", alignItems: "center", justifyContent: "center", margin: "3px" }, children: children })] }));
+            width: "1500px", height: "250px", ...borderStyle }, children: [jsxRuntimeExports.jsx("div", { style: { margin: "auto" }, children: jsxRuntimeExports.jsx("h1", { style: { textDecorationLine: "underline", textAlign: "center", ...usernameStyle }, children: username }) }), jsxRuntimeExports.jsx("div", { style: { display: "flex", flexFlow: "row wrap", alignItems: "center", justifyContent: "center", margin: "3px" }, children: children })] }));
 };
 
-const FriendList = ({ children, style }) => {
+const FriendList = ({ children, borderStyle, titleStyle }) => {
     return (jsxRuntimeExports.jsxs("div", { style: { border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "#FF0099", borderRadius: "8px",
-            width: "400px", ...style }, children: [jsxRuntimeExports.jsx("div", { style: { margin: "auto" }, children: jsxRuntimeExports.jsx("h1", { style: { textDecorationLine: "underline", textAlign: "center" }, children: "Friends" }) }), jsxRuntimeExports.jsx("div", { style: { display: "flex", flexFlow: "row wrap", alignItems: "center", justifyContent: "center", margin: "3px" }, children: children })] }));
+            width: "400px", ...borderStyle }, children: [jsxRuntimeExports.jsx("div", { style: { margin: "auto" }, children: jsxRuntimeExports.jsx("h1", { style: { textDecorationLine: "underline", textAlign: "center", ...titleStyle }, children: "Friends" }) }), jsxRuntimeExports.jsx("div", { style: { display: "flex", flexFlow: "row wrap", alignItems: "center", justifyContent: "center", margin: "3px" }, children: children })] }));
 };
 
 exports.Achievement = Achievement;
