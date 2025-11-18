@@ -1,1 +1,5 @@
-hello, this is to quickly add to VS Code without error
+Gamification Component Library
+
+This library contains...
+
+av Charlie Larsson för examensarbete i dataingenjörsprogrammet på Högskolan i Gävle
