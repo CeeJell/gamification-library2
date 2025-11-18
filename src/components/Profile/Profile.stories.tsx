@@ -26,7 +26,7 @@ export default {
 export const PageOne = {
     args: {
         username: "Charlie Larsson",
-        profilePicture: "https://avatars.fastly.steamstatic.com/72629d43a8e63c0459c2d9cc06731f64161e3e17_full.jpg",
+        profilePicture: "https://images.pexels.com/photos/940365/pexels-photo-940365.jpeg",
         children: ""
     },
 };

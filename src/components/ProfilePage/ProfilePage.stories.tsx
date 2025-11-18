@@ -20,6 +20,6 @@ export default {
 export const PageOne = {
     args: {
         children: "",
-        username: "Exjobb username",
+        username: "Username",
     },
 };

@@ -39,7 +39,7 @@ export const PageOne = {
     args: {
         title: "Is this working????",
         description: "Yes it is",
-        picture: "https://avatars.fastly.steamstatic.com/72629d43a8e63c0459c2d9cc06731f64161e3e17_full.jpg",
+        picture: "https://images.pexels.com/photos/940365/pexels-photo-940365.jpeg",
         percentage: "50",
         id: "1",
         profileId: "1",

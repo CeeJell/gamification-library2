@@ -1,4 +1,5 @@
 export type Props = {
     children: React.ReactNode;
-    style?: React.CSSProperties;
+    borderStyle?: React.CSSProperties;
+    titleStyle?: React.CSSProperties;
 }

@@ -2,14 +2,14 @@ import React from 'react';
 import { Props } from './types';
 
 
-const ProfilePage: React.FC<Props> = ({ children, username, style }) => {
+const ProfilePage: React.FC<Props> = ({ children, username, borderStyle, usernameStyle }) => {
 
     return (
         <div style={{border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "#FF0099", borderRadius: "8px", 
-        width: "1500px", height: "250px", ...style}}>
+        width: "1500px", height: "250px", ...borderStyle}}>
 
             <div style={{margin: "auto"}}>
-            <h1 style={{textDecorationLine: "underline", textAlign: "center"}}>{ username }</h1>
+            <h1 style={{textDecorationLine: "underline", textAlign: "center", ...usernameStyle}}>{ username }</h1>
             </div>
             <div style={{display: "flex", flexFlow: "row wrap", alignItems: "center", justifyContent: "center", margin: "3px"}}>
             {children}
