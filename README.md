@@ -1,5 +1,8 @@
 Gamification Component Library
 
-This library contains...
+Every component and its parts are able to be customized as you wish.
 
-av Charlie Larsson för examensarbete i dataingenjörsprogrammet på Högskolan i Gävle
+To see how every component is used, please visit the repository wiki.
+https://github.com/CeeJell/gamification-library2/wiki
+
+by Charlie Larsson as part of bachelor thesis in Computer Engineering at the University of Gävle 
