@@ -1,4 +1,5 @@
 export type Props = {
     percentage: number;
-    style?: React.CSSProperties;
+    sliderStyle?: React.CSSProperties;
+    textStyle?: React.CSSProperties;
 };

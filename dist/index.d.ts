@@ -12,14 +12,16 @@ type Props$5 = {
     pictureStyle?: React.CSSProperties;
     titleStyle?: React.CSSProperties;
     descriptionStyle?: React.CSSProperties;
-    progressbarStyle?: React.CSSProperties;
+    progressbarSliderStyle?: React.CSSProperties;
+    progressbarTextStyle?: React.CSSProperties;
 };
 
 declare const Achievement: React$1.FC<Props$5>;
 
 type Props$4 = {
     percentage: number;
-    style?: React.CSSProperties;
+    sliderStyle?: React.CSSProperties;
+    textStyle?: React.CSSProperties;
 };
 
 declare const ProgressBar: React$1.FC<Props$4>;

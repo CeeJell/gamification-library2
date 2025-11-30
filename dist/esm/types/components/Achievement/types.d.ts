@@ -10,5 +10,6 @@ export type Props = {
     pictureStyle?: React.CSSProperties;
     titleStyle?: React.CSSProperties;
     descriptionStyle?: React.CSSProperties;
-    progressbarStyle?: React.CSSProperties;
+    progressbarSliderStyle?: React.CSSProperties;
+    progressbarTextStyle?: React.CSSProperties;
 };

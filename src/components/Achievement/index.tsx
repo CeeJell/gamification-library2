@@ -2,7 +2,7 @@ import React from 'react';
 import { Props } from './types';
 import ProgressBar from '../ProgressBar';
 
-const Achievement: React.FC<Props> = ({ title, description, picture, percentage, children, borderStyle, pictureStyle, titleStyle, descriptionStyle, progressbarStyle }) => {
+const Achievement: React.FC<Props> = ({ title, description, picture, percentage, children, borderStyle, pictureStyle, titleStyle, descriptionStyle, progressbarSliderStyle, progressbarTextStyle }) => {
     
     return (
         <div style={{border: "3px solid ", content: "", clear: "both", display: "table", borderColor: "red", borderRadius: "8px",
@@ -13,7 +13,7 @@ const Achievement: React.FC<Props> = ({ title, description, picture, percentage,
             <div style={{margin: "auto", padding: "5px"}}>
             <h1 style={{...titleStyle}}>{title}</h1>
             <h2 style={{...descriptionStyle}}>{description}</h2>
-            <ProgressBar percentage={percentage} style={{...progressbarStyle}}></ProgressBar>
+            <ProgressBar percentage={percentage} sliderStyle={{...progressbarSliderStyle}} textStyle={{...progressbarTextStyle}}></ProgressBar>
             </div>
             <div>
             {children}
