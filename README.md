@@ -6,6 +6,8 @@ To see how every component is used, please visit the repository wiki.
 https://github.com/CeeJell/gamification-library2/wiki
 
 Install with npm: </br>
-npm i gamification-library@latest
 
+> npm i gamification-library@latest
+
+</br>
 by Charlie Larsson as part of bachelor thesis in Computer Engineering at the University of Gävle 
