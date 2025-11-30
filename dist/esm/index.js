@@ -2242,8 +2242,8 @@ if (process.env.NODE_ENV === 'production') {
 
 var jsxRuntimeExports = jsxRuntime.exports;
 
-const ProgressBar = ({ percentage, sliderStyle, textStyle }) => {
-    return (jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: jsxRuntimeExports.jsxs("div", { style: { display: "inline-block" }, children: [jsxRuntimeExports.jsx("progress", { style: { accentColor: "red", ...sliderStyle }, value: percentage, max: "100" }), jsxRuntimeExports.jsx("h3", { style: { textAlign: "center", margin: "0", padding: "0", ...textStyle }, children: percentage })] }) }));
+const ProgressBar = ({ percentage, sliderStyle, textStyle, compontentStyle }) => {
+    return (jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: jsxRuntimeExports.jsxs("div", { style: { display: "inline-block", ...compontentStyle }, children: [jsxRuntimeExports.jsx("progress", { style: { accentColor: "red", ...sliderStyle }, value: percentage, max: "100" }), jsxRuntimeExports.jsx("h3", { style: { textAlign: "center", margin: "0", padding: "0", ...textStyle }, children: percentage })] }) }));
 };
 
 const Achievement = ({ title, description, picture, percentage, children, borderStyle, pictureStyle, titleStyle, descriptionStyle, progressbarSliderStyle, progressbarTextStyle }) => {

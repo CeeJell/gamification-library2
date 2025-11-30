@@ -22,6 +22,7 @@ type Props$4 = {
     percentage: number;
     sliderStyle?: React.CSSProperties;
     textStyle?: React.CSSProperties;
+    compontentStyle?: React.CSSProperties;
 };
 
 declare const ProgressBar: React$1.FC<Props$4>;
